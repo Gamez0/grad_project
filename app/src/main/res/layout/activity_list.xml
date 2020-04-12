@@ -7,8 +7,12 @@
     tools:context=".ListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_board"
+        tools:itemCount="5"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:padding="8dp"
-    android:background="@color/color_gray">
+    android:background="@color/color_gray"
+    android:layout_marginBottom="2dp">
     <TextView
-        android:id="@+id/item_title"
+        android:id="@+id/item_board_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="제목입니다제목"
@@ -18,16 +19,16 @@
         />
 
     <TextView
-        android:id="@+id/writer"
+        android:id="@+id/item_board_writer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:text="글쓴이"
         android:textSize="12dp"
         android:textColor="@color/color_secondary"/>
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/item_board_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
@@ -36,7 +37,7 @@
 
         />
     <TextView
-        android:id="@+id/read_comment"
+        android:id="@+id/item_board_read_comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
