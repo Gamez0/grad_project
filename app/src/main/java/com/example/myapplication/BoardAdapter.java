@@ -2,6 +2,7 @@ package com.example.myapplication;
 //슈퍼클래스가 adapter<vhc>
 //file > depences > app> +>lib dendence > recycler view
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,7 +57,10 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder>{
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(mContext, title.getText().toString(), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(mContext, title.getText().toString(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext,ItemActivity.class);
+                    mContext.startActivity(intent);
+
                 }
             });
         }
