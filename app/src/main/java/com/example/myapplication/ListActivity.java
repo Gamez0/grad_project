@@ -42,7 +42,7 @@ public class ListActivity extends AppCompatActivity {
         datas.add(new BoardData("git연습","박지원","1621.03.21","조회수 23 댓글 2"));
         datas.add(new BoardData("이번엔 push까지","박지원","1621.03.21","조회수 23 댓글 2"));
         datas.add(new BoardData("push실패..","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardData("청산별곡4","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardData("ㅇㅇ","박지원","1621.03.21","조회수 23 댓글 2"));
         datas.add(new BoardData("청산별곡5","박지원","1621.03.21","조회수 23 댓글 2"));
         datas.add(new BoardData("청산별곡6","박지원","1621.03.21","조회수 23 댓글 2"));
 
