@@ -8,7 +8,7 @@ import android.view.View;
 import com.example.myapplication.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import com.example.myapplication.dialog.ReviewDialog;
+import com.example.myapplication.Dialog.ReviewDialog;
 
 public class ItemActivity extends AppCompatActivity {
     FloatingActionButton fab;
