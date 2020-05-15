@@ -1,4 +1,4 @@
-package dialog;
+package com.example.myapplication.Dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -11,8 +11,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.myapplication.R;
-
-import org.w3c.dom.Text;
 
 public class ReviewDialog extends Dialog {
     RatingBar star;
