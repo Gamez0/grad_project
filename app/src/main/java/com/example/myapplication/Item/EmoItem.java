@@ -3,14 +3,14 @@ package com.example.myapplication.Item;
 import androidx.annotation.Keep;
 
 @Keep
-public class emoItem {
+public class EmoItem {
     // emotion Item
     String name;
     String subName;
-    public emoItem(){
+    public EmoItem(){
 
     }
-    public emoItem(String name,String subName){
+    public EmoItem(String name, String subName){
         this.name=name;
         this.subName=subName;
 
