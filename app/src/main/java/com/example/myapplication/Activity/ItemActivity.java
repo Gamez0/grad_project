@@ -1,13 +1,14 @@
-package com.example.myapplication;
+package com.example.myapplication.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.myapplication.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import dialog.ReviewDialog;
+import com.example.myapplication.dialog.ReviewDialog;
 
 public class ItemActivity extends AppCompatActivity {
     FloatingActionButton fab;

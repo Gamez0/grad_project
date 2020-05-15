@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -6,13 +6,15 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
 
-import java.util.ArrayList;
+import com.example.myapplication.Adapter.BoardAdapter;
+import com.example.myapplication.Item.BoardItem;
+import com.example.myapplication.R;
 
-import data.BoardData;
+import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity {
     RecyclerView rv;//
-    ArrayList<BoardData> datas = new ArrayList<>();
+    ArrayList<BoardItem> datas = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,12 +41,12 @@ public class ListActivity extends AppCompatActivity {
         String readcomment;
         * */
         datas.clear();
-        datas.add(new BoardData("git연습","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardData("이번엔 push까지","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardData("push실패..","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardData("ㅇㅇ","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardData("다섯번째시도","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardData("여섯째!","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("git연습","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("이번엔 push까지","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("push실패..","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("ㅇㅇ","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("다섯번째시도","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("여섯째!","박지원","1621.03.21","조회수 23 댓글 2"));
 
 
     }

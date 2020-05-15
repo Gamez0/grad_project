@@ -1,10 +1,13 @@
-package com.example.myapplication;
+package com.example.myapplication.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.GridView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.ButtonAdapter;
+import com.example.myapplication.R;
 
 public class GridActivity extends AppCompatActivity {
     String[] buttonName={
