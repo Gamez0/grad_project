@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Adapter;
 //슈퍼클래스가 adapter<vhc>
 //file > depences > app> +>lib dendence > recycler view
 import android.content.Context;
@@ -7,23 +7,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.Activity.ItemActivity;
+import com.example.myapplication.R;
+
 import java.util.ArrayList;
 
-import data.BoardData;
+import com.example.myapplication.Item.BoardItem;
 
 public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder>{
 //여기까지 쓰고 alt+enter
     Context mContext;
-    ArrayList<BoardData> datas;
+    ArrayList<BoardItem> data;
 
-    public BoardAdapter(Context mContext, ArrayList<BoardData> datas) {
+    public BoardAdapter(Context mContext, ArrayList<BoardItem> data) {
         this.mContext = mContext;
-        this.datas = datas;
+        this.data = data;
     }
 
     @NonNull
@@ -36,12 +38,12 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull BoardAdapter.ViewHolder holder, int position) {
-        holder.bind(datas.get(position));
+        holder.bind(data.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return datas.size();
+        return data.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -58,18 +60,18 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder>{
                 @Override
                 public void onClick(View v) {
                     //Toast.makeText(mContext, title.getText().toString(), Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(mContext,ItemActivity.class);
+                    Intent intent = new Intent(mContext, ItemActivity.class);
                     mContext.startActivity(intent);
 
                 }
             });
         }
 
-        public void bind(BoardData boardData) {
-            title.setText(boardData.getTitle());
-            writer.setText(boardData.getWriter());
-            date.setText(boardData.getDate());
-            comment.setText(boardData.getReadcomment());
+        public void bind(BoardItem boardItem) {
+            title.setText(boardItem.getTitle());
+            writer.setText(boardItem.getWriter());
+            date.setText(boardItem.getDate());
+            comment.setText(boardItem.getReadComment());
 
         }
     }
