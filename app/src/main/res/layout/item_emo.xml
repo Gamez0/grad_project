@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:padding="8dp"
+    android:background="@color/color_gray"
+    android:layout_marginBottom="2dp">
+    <TextView
+        android:id="@+id/item_emo_subname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="세부감정"
+
+        />
+    <TextView
+        android:id="@+id/item_emo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="감정"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+
+        />
+
+
+</LinearLayout>
