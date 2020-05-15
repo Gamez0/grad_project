@@ -1,22 +1,22 @@
-package data;
+package com.example.myapplication.Item;
 
 import androidx.annotation.Keep;
 
 @Keep
-public class BoardData {
+public class BoardItem {
     String title;
     String writer;
     String date;
-    String readcomment;
+    String readComment; // 파라미터 규칙에 맞게 변경했습니다. readcomment - > readComment (C를 대문자로)
 
-    public BoardData() {
+    public BoardItem() {
     }
 
-    public BoardData(String title, String writer, String date, String readcomment) {
+    public BoardItem(String title, String writer, String date, String readComment) {
         this.title = title;
         this.writer = writer;
         this.date = date;
-        this.readcomment = readcomment;
+        this.readComment = readComment;
     }
 
     public String getTitle() {
@@ -43,21 +43,21 @@ public class BoardData {
         this.date = date;
     }
 
-    public String getReadcomment() {
-        return readcomment;
+    public String getReadComment() {
+        return readComment;
     }
 
-    public void setReadcomment(String readcomment) {
-        this.readcomment = readcomment;
+    public void setReadComment(String readComment) {
+        this.readComment = readComment;
     }
 
     @Override
     public String toString() {
-        return "BoardData{" +
+        return "BoardItem{" +
                 "title='" + title + '\'' +
                 ", writer='" + writer + '\'' +
                 ", date='" + date + '\'' +
-                ", readcomment='" + readcomment + '\'' +
+                ", readComment='" + readComment + '\'' +
                 '}';
     }
 }
