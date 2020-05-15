@@ -11,8 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
-        android:layout_marginLeft="0dp"
-        android:text="세부감정"
+        android:text="세부감정.."
 
         />
     <TextView
@@ -20,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="감정"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="60dp"
         android:layout_gravity="center"
