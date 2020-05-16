@@ -2,6 +2,7 @@ package com.example.myapplication.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -12,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
+        setContentView(R.layout.activity_grid);
 
-        Intent intent = new Intent(this,ListActivity.class);
+        Intent intent = new Intent(this,GridActivity.class);
         startActivity(intent);
         finish();
     }

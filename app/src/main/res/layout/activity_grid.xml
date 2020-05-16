@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.GridActivity">
-    <GridView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/gridlist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="2"
+
         tools:listitem="@layout/item_emo"
-        tools:itemCount="5"
+
         >
 
-    </GridView>
+    </androidx.recyclerview.widget.RecyclerView>
 
-</LinearLayout>
+</RelativeLayout>
