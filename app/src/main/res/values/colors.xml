@@ -11,4 +11,11 @@
     <color name="color_secondary">#536dfe</color>
     <color name="colorPrimary">#c2185b</color>
     <color name="greyish_brown">#474747</color>
+
+    <color name="emo1">#a8d8ea</color>
+    <color name="emo2">#aa96da</color>
+    <color name="emo3">#fcbad3</color>
+    <color name="emo4">#ffffd2</color>
+    <color name="emo5">#bb3b0e</color>
+
 </resources>

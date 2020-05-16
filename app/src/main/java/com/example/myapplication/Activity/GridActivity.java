@@ -5,6 +5,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.Toast;
 
 import com.example.myapplication.Adapter.EmoAdapter;
 import com.example.myapplication.Item.EmoItem;
@@ -13,9 +17,8 @@ import com.example.myapplication.R;
 import java.util.ArrayList;
 
 public class GridActivity extends AppCompatActivity {
-    RecyclerView rv;
-    EmoAdapter adapter;
-    GridLayoutManager layoutManager;
+    GridView gridView;
+
     ArrayList<EmoItem> datas = new ArrayList<EmoItem>(){
         {add(new EmoItem("Joy","기쁨,즐거움"));
         add(new EmoItem("Sadness","슬픔,그리움,걱정,사랑"));
@@ -28,12 +31,32 @@ public class GridActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grid);
-        rv = (RecyclerView) findViewById(R.id.gridlist);
-        adapter=new EmoAdapter(getApplicationContext(),datas);
-        layoutManager=new GridLayoutManager(getApplicationContext(),2);
-        rv.setLayoutManager(layoutManager);
-        rv.setAdapter(adapter);
+        setContentView(R.layout.grid_view);
+
+        EmoAdapter emoAdapter = new EmoAdapter(getApplicationContext(),datas);
+
+        gridView =  (GridView) findViewById(R.id.grid_view);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    // 감정을 누르면 이동할 fragment 부르거나 intent
+                    case 0:
+                        Toast.makeText(getApplicationContext(), "눌림", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+            }
+        });
+        gridView.setAdapter(emoAdapter);
     }
 
 
