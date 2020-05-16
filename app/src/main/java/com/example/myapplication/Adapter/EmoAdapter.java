@@ -43,7 +43,7 @@ public class EmoAdapter extends RecyclerView.Adapter<EmoAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView name = itemView.findViewById(R.id.item_emo_name);
-        TextView subname = itemView.findViewById(R.id.item_emo_subname);
+        TextView subName = itemView.findViewById(R.id.item_emo_subname);
         public ViewHolder(@NonNull View itemView){
             super(itemView);
 
@@ -51,7 +51,7 @@ public class EmoAdapter extends RecyclerView.Adapter<EmoAdapter.ViewHolder> {
         }
         public void bind(EmoItem emoItem){
             name.setText(emoItem.getName());
-            subname.setText(emoItem.getSubName());
+            subName.setText(emoItem.getSubName());
 
         }
     }
