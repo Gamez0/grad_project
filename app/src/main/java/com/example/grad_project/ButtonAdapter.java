@@ -1,10 +1,9 @@
-package com.example.myapplication;
+package com.example.grad_project;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.GridView;
 
 public class ButtonAdapter extends BaseAdapter {
     Context context = null;

@@ -1,8 +1,7 @@
-package com.example.myapplication.Adapter;
+package com.example.grad_project.Adapter;
 
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,11 +10,8 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.myapplication.Item.EmoItem;
-import com.example.myapplication.R;
+import com.example.grad_project.Item.EmoItem;
+import com.example.grad_project.R;
 
 import java.util.ArrayList;
 

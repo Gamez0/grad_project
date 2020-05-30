@@ -1,12 +1,11 @@
-package com.example.myapplication.Activity;
+package com.example.grad_project.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.myapplication.R;
+import com.example.grad_project.R;
 
 public class MainActivity extends AppCompatActivity {
 //aaaaaaaa

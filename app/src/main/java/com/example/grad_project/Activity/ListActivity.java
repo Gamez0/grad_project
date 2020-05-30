@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity;
+package com.example.grad_project.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
 
-import com.example.myapplication.Adapter.BoardAdapter;
-import com.example.myapplication.Item.BoardItem;
-import com.example.myapplication.R;
+import com.example.grad_project.Adapter.BoardAdapter;
+import com.example.grad_project.Item.BoardItem;
+import com.example.grad_project.R;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.grad_project;
 
 import org.junit.Test;
 

@@ -1,8 +1,5 @@
-package com.example.myapplication.Activity;
+package com.example.grad_project.Activity;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,9 +7,9 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
-import com.example.myapplication.Adapter.EmoAdapter;
-import com.example.myapplication.Item.EmoItem;
-import com.example.myapplication.R;
+import com.example.grad_project.Adapter.EmoAdapter;
+import com.example.grad_project.Item.EmoItem;
+import com.example.grad_project.R;
 
 import java.util.ArrayList;
 

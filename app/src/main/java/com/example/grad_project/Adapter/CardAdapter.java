@@ -1,4 +1,4 @@
-package com.example.myapplication.Adapter;
+package com.example.grad_project.Adapter;
 
 import androidx.cardview.widget.CardView;
 

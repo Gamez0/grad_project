@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity;
+package com.example.grad_project.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -10,11 +10,11 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
-import com.example.myapplication.Adapter.PagerAdapter.CardPagerAdapter;
-import com.example.myapplication.Fragment.FragmentPagerAdapter.CardFragmentPagerAdapter;
-import com.example.myapplication.Item.CardItem;
-import com.example.myapplication.R;
-import com.example.myapplication.ShadowTransformer;
+import com.example.grad_project.Adapter.PagerAdapter.CardPagerAdapter;
+import com.example.grad_project.Fragment.FragmentPagerAdapter.CardFragmentPagerAdapter;
+import com.example.grad_project.Item.CardItem;
+import com.example.grad_project.R;
+import com.example.grad_project.ShadowTransformer;
 
 public class viewPagerActivity extends AppCompatActivity implements View.OnClickListener,
         CompoundButton.OnCheckedChangeListener {

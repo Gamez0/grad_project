@@ -1,4 +1,4 @@
-package com.example.myapplication.Adapter;
+package com.example.grad_project.Adapter;
 //슈퍼클래스가 adapter<vhc>
 //file > depences > app> +>lib dendence > recycler view
 import android.content.Context;
@@ -11,12 +11,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.Activity.ItemActivity;
-import com.example.myapplication.R;
+import com.example.grad_project.Activity.ItemActivity;
+import com.example.grad_project.R;
 
 import java.util.ArrayList;
 
-import com.example.myapplication.Item.BoardItem;
+import com.example.grad_project.Item.BoardItem;
 
 public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder>{
 //여기까지 쓰고 alt+enter

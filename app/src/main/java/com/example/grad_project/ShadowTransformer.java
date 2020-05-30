@@ -1,11 +1,11 @@
-package com.example.myapplication;
+package com.example.grad_project;
 
 import android.view.View;
 
 import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.myapplication.Adapter.CardAdapter;
+import com.example.grad_project.Adapter.CardAdapter;
 
 public class ShadowTransformer implements ViewPager.OnPageChangeListener, ViewPager.PageTransformer {
 

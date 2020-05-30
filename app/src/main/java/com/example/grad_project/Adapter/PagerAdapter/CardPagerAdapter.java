@@ -1,4 +1,4 @@
-package com.example.myapplication.Adapter.PagerAdapter;
+package com.example.grad_project.Adapter.PagerAdapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,9 +8,9 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.example.myapplication.Adapter.CardAdapter;
-import com.example.myapplication.Item.CardItem;
-import com.example.myapplication.R;
+import com.example.grad_project.Adapter.CardAdapter;
+import com.example.grad_project.Item.CardItem;
+import com.example.grad_project.R;
 
 import java.util.ArrayList;
 import java.util.List;

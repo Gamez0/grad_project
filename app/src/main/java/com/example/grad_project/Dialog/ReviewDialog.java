@@ -1,4 +1,4 @@
-package com.example.myapplication.Dialog;
+package com.example.grad_project.Dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.example.myapplication.R;
+import com.example.grad_project.R;
 
 public class ReviewDialog extends Dialog {
     RatingBar star;

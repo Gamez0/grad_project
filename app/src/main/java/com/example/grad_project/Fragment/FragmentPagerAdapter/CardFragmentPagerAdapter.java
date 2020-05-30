@@ -1,4 +1,4 @@
-package com.example.myapplication.Fragment.FragmentPagerAdapter;
+package com.example.grad_project.Fragment.FragmentPagerAdapter;
 
 import android.view.ViewGroup;
 
@@ -7,8 +7,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.example.myapplication.Adapter.CardAdapter;
-import com.example.myapplication.Fragment.CardFragment;
+import com.example.grad_project.Adapter.CardAdapter;
+import com.example.grad_project.Fragment.CardFragment;
 
 import java.util.ArrayList;
 import java.util.List;

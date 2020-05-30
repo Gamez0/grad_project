@@ -1,4 +1,4 @@
-package com.example.myapplication.Item;
+package com.example.grad_project.Item;
 
 public class CardItem {
     private int mTextResource;

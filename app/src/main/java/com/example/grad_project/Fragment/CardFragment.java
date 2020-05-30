@@ -1,4 +1,4 @@
-package com.example.myapplication.Fragment;
+package com.example.grad_project.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
-import com.example.myapplication.Adapter.CardAdapter;
-import com.example.myapplication.R;
+import com.example.grad_project.Adapter.CardAdapter;
+import com.example.grad_project.R;
 
 public class CardFragment extends Fragment {
 
