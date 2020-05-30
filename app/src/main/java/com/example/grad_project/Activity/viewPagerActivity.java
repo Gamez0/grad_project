@@ -38,6 +38,7 @@ public class viewPagerActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_view_pager);
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
         tabLayout = (TabLayout) findViewById(R.id.tabs) ;
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -48,6 +49,7 @@ public class viewPagerActivity extends AppCompatActivity implements View.OnClick
                 }else{
                     //fragment를 호출하는게 좋음
                     Intent intent = new Intent(getApplicationContext(),GridActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     finish();
                 }
@@ -103,5 +105,11 @@ public class viewPagerActivity extends AppCompatActivity implements View.OnClick
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
         mCardShadowTransformer.enableScaling(b);
         mFragmentCardShadowTransformer.enableScaling(b);
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
+        overridePendingTransition(0,0);
+
     }
 }

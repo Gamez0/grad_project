@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Intent intent = new Intent(this,viewPagerActivity.class);
+
         startActivity(intent);
         finish();
     }

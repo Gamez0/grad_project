@@ -20,6 +20,7 @@ public class GridActivity extends AppCompatActivity {
     GridView gridView;
     private TabLayout tabLayout;
 
+
     ArrayList<EmoItem> datas = new ArrayList<EmoItem>(){
         {add(new EmoItem("Joy","기쁨,즐거움"));
         add(new EmoItem("Sadness","슬픔,그리움,걱정,사랑"));
@@ -30,12 +31,19 @@ public class GridActivity extends AppCompatActivity {
         }
     };
     @Override
+    protected void onPause(){
+        super.onPause();
+        overridePendingTransition(0,0);
+
+    }
+    @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grid_view);
         final Intent intent_emotion = new Intent(getApplicationContext(), ListActivity.class);
         tabLayout = (TabLayout) findViewById(R.id.tabs) ;
-
+        TabLayout.Tab tab = tabLayout.getTabAt(1);
+        tab.select();
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
             @Override
@@ -45,6 +53,7 @@ public class GridActivity extends AppCompatActivity {
                 if(pos ==0){
                     //fragment를 호출하는게 좋음
                     Intent intent = new Intent(getApplicationContext(),viewPagerActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     finish();
 
