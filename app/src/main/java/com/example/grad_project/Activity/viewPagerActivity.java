@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,12 +16,14 @@ import com.example.grad_project.Fragment.FragmentPagerAdapter.CardFragmentPagerA
 import com.example.grad_project.Item.CardItem;
 import com.example.grad_project.R;
 import com.example.grad_project.ShadowTransformer;
+import com.google.android.material.tabs.TabLayout;
 
 public class viewPagerActivity extends AppCompatActivity implements View.OnClickListener,
         CompoundButton.OnCheckedChangeListener {
 
     private Button mButton;
     private ViewPager mViewPager;
+    private TabLayout tabLayout;
 
     private CardPagerAdapter mCardAdapter;
     private ShadowTransformer mCardShadowTransformer;
@@ -34,9 +37,32 @@ public class viewPagerActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager);
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
-        mButton = (Button) findViewById(R.id.cardTypeBtn);
-        ((CheckBox) findViewById(R.id.checkBox)).setOnCheckedChangeListener(this);
-        mButton.setOnClickListener(this);
+        tabLayout = (TabLayout) findViewById(R.id.tabs) ;
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                int pos = tab.getPosition();
+                if(pos ==0){
+                    //fragment를 호출하는게 좋음
+                    // 현재이므로 stay
+                }else{
+                    //fragment를 호출하는게 좋음
+                    Intent intent = new Intent(getApplicationContext(),GridActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
         mCardAdapter = new CardPagerAdapter();
         mCardAdapter.addCardItem(new CardItem(R.string.title_1, R.string.text_1));

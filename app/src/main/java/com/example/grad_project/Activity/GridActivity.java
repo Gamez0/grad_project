@@ -1,6 +1,7 @@
 package com.example.grad_project.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,11 +11,13 @@ import android.widget.Toast;
 import com.example.grad_project.Adapter.EmoAdapter;
 import com.example.grad_project.Item.EmoItem;
 import com.example.grad_project.R;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
 public class GridActivity extends AppCompatActivity {
     GridView gridView;
+    private TabLayout tabLayout;
 
     ArrayList<EmoItem> datas = new ArrayList<EmoItem>(){
         {add(new EmoItem("Joy","기쁨,즐거움"));
@@ -29,6 +32,37 @@ public class GridActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grid_view);
+
+        tabLayout = (TabLayout) findViewById(R.id.tabs) ;
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                int pos = tab.getPosition();
+
+                if(pos ==0){
+                    //fragment를 호출하는게 좋음
+                    Intent intent = new Intent(getApplicationContext(),viewPagerActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }else{
+                    //fragment를 호출하는게 좋음
+                    // 현재이므로 stay
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
         EmoAdapter emoAdapter = new EmoAdapter(getApplicationContext(),datas);
 

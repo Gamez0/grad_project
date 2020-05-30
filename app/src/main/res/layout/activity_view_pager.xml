@@ -2,41 +2,39 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true">
 
 <!--    아래의 linearlayout은 지울 수도 있음-->
-    <LinearLayout
-
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:orientation="vertical">
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="@color/color_gray"
+        android:animateLayoutChanges="false">
 
-        <Button
-            android:id="@+id/cardTypeBtn"
-            style="@style/ButtonStyle"
+        <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fragments" />
+            android:text="추천 시" />
 
-        <CheckBox
-            android:id="@+id/checkBox"
+        <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Scale" />
-    </LinearLayout>
+
+            android:text="테마별 추천시" />
+
+    </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="750dp"
         android:layout_gravity="bottom"
         android:clipToPadding="false"
         android:overScrollMode="never"
-        android:paddingStart="@dimen/card_padding"
+        android:paddingStart="30dp"
         android:paddingLeft="@dimen/card_padding"
         android:paddingEnd="@dimen/card_padding"
         android:paddingRight="@dimen/card_padding"
