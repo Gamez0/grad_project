@@ -30,7 +30,7 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="750dp"
+        android:layout_height="600dp"
         android:layout_gravity="bottom"
         android:clipToPadding="false"
         android:overScrollMode="never"
@@ -38,6 +38,7 @@
         android:paddingLeft="@dimen/card_padding"
         android:paddingEnd="@dimen/card_padding"
         android:paddingRight="@dimen/card_padding"
-        android:paddingBottom="30dp" />
+        android:paddingBottom="30dp"
+        />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
