@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "957274199049",
+    "firebase_url": "https://grad-project-c4bfc.firebaseio.com",
+    "project_id": "grad-project-c4bfc",
+    "storage_bucket": "grad-project-c4bfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957274199049:android:37c76b2c308b051e2254d8",
+        "android_client_info": {
+          "package_name": "com.example.grad_proj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957274199049-tp0n71dqnhc7aji7g87g6dhj4dvfu0nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApsBbRE7LjTnM8rMLOekWDIi1_BwGfJoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957274199049-tp0n71dqnhc7aji7g87g6dhj4dvfu0nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
