@@ -17,16 +17,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.example.grad_project.Activity.viewPagerActivity"></activity>
-        <activity android:name="com.example.grad_project.Activity.ItemActivity" />
-        <activity android:name="com.example.grad_project.Activity.ListActivity" />
-        <activity android:name="com.example.grad_project.Activity.GridActivity"/>
-        <activity android:name="com.example.grad_project.Activity.MainActivity">
+        <activity android:name=".Activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Activity.viewPagerActivity" />
+        <activity android:name=".Activity.ItemActivity" />
+        <activity android:name=".Activity.ListActivity" />
+        <activity android:name=".Activity.GridActivity" />
+        <activity android:name=".Activity.MainActivity">
+
         </activity>
     </application>
 
