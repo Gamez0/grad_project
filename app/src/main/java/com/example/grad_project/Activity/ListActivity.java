@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.grad_project.Adapter.BoardAdapter;
@@ -15,6 +17,7 @@ import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity {
     RecyclerView rv;//
+    //ImageView back;
     ArrayList<BoardItem> datas = new ArrayList<>();
     int emotion_value;
     @Override
@@ -26,6 +29,13 @@ public class ListActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "받은 감정 : "+emotion_value, Toast.LENGTH_SHORT).show();
 
         rv = findViewById(R.id.list_rv);
+       // back = findViewById(R.id.item_back);
+        /*back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });*/
         setData();
         setRv();
     }
@@ -47,12 +57,12 @@ public class ListActivity extends AppCompatActivity {
         String readcomment;
         * */
         datas.clear();
-        datas.add(new BoardItem("git연습","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardItem("이번엔 push까지","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardItem("push실패..","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardItem("ㅇㅇ","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardItem("다섯번째시도","박지원","1621.03.21","조회수 23 댓글 2"));
-        datas.add(new BoardItem("여섯째!","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("초혼","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("청산별곡","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("님의 침묵","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("거울","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("자화상","박지원","1621.03.21","조회수 23 댓글 2"));
+        datas.add(new BoardItem("별","박지원","1621.03.21","조회수 23 댓글 2"));
 
 
     }
