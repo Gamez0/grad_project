@@ -1,9 +1,12 @@
 package com.example.grad_project.Adapter.PagerAdapter;
 
+import android.media.MediaPlayer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.PagerAdapter;
@@ -20,6 +23,7 @@ public class CardPagerAdapter extends PagerAdapter implements CardAdapter {
     private List<CardView> mViews;
     private List<CardItem> mData;
     private float mBaseElevation;
+    private MediaPlayer mediaPlayer;
 
     public CardPagerAdapter() {
         mData = new ArrayList<>();
@@ -76,8 +80,25 @@ public class CardPagerAdapter extends PagerAdapter implements CardAdapter {
     private void bind(CardItem item, View view) {
         TextView titleTextView = (TextView) view.findViewById(R.id.titleTextView);
         TextView contentTextView = (TextView) view.findViewById(R.id.contentTextView);
+        Button playMusicButton = (Button) view.findViewById(R.id.playMusicButton);
+        mediaPlayer = MediaPlayer.create(view.getContext(),R.raw.horror);
         titleTextView.setText(item.getTitle());
         contentTextView.setText(item.getText());
+        playMusicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(mediaPlayer.isPlaying()){
+                    Toast.makeText(v.getContext(), "음악 중지", Toast.LENGTH_SHORT).show();
+                    mediaPlayer.pause();
+//                    playButton1.setBackgroundResource(R.drawable.ic_play);
+                }else{
+                    Toast.makeText(v.getContext(), "음악 재생", Toast.LENGTH_SHORT).show();
+                    mediaPlayer.start();
+//                    playButton1.setBackgroundResource(R.drawable.ic_pause);
+                }
+            }
+        });
     }
 
 }
