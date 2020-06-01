@@ -67,10 +67,10 @@ public class viewPagerActivity extends AppCompatActivity implements View.OnClick
         });
 
         mCardAdapter = new CardPagerAdapter();
-        mCardAdapter.addCardItem(new CardItem(R.string.title_1, R.string.text_1));
-        mCardAdapter.addCardItem(new CardItem(R.string.title_2, R.string.text_1));
-        mCardAdapter.addCardItem(new CardItem(R.string.title_3, R.string.text_1));
-        mCardAdapter.addCardItem(new CardItem(R.string.title_4, R.string.text_1));
+        mCardAdapter.addCardItem(new CardItem(R.string.title_1, R.string.text_1,0));
+        mCardAdapter.addCardItem(new CardItem(R.string.title_2, R.string.text_1,1));
+        mCardAdapter.addCardItem(new CardItem(R.string.title_3, R.string.text_1,2));
+        mCardAdapter.addCardItem(new CardItem(R.string.title_4, R.string.text_1,3));
         mFragmentCardAdapter = new CardFragmentPagerAdapter(getSupportFragmentManager(),
                 dpToPixels(2, this));
 
