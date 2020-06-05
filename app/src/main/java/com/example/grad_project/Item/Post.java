@@ -11,10 +11,10 @@ import java.util.Map;
 
 public class Post implements Serializable, LazyLoading {
 
-    private String id;
-    private String title;
-    private String username;
-    private String description;
+    private String id;          // 시 id
+    private String title;       // 시 제목
+    private String username;    // 시 작가
+    private String description; // 시 내용
     private long createdDate;
     //private String imagePath;
     private String imageTitle;
@@ -24,8 +24,6 @@ public class Post implements Serializable, LazyLoading {
     private long watchersCount;
     private boolean hasComplain;
     private ItemType itemType;
-    private int prayerFor;  //누구를 위한 기도인가? J를 위한, O를 위한, Y를 위한; 누구를 위한 기도문인가
-    private ArrayList<String> coPrayer; //누구에게 기도 부탁할까?, 누가 나를 위해 기도해줄까?; 공개범위 설정
     private boolean isGlobal;   // 전체공개인가? default는 전체공개로!
 
     public Post() {
@@ -118,22 +116,6 @@ public class Post implements Serializable, LazyLoading {
         this.watchersCount = watchersCount;
     }
 
-    public int getPrayerFor() {
-        return prayerFor;
-    }
-
-    public void setPrayerFor(int prayerFor) {
-        this.prayerFor = prayerFor;
-    }
-
-    public ArrayList<String> getCoPrayer() {
-        return coPrayer;
-    }
-
-    public void setCoPrayer(ArrayList<String> coPrayer) {
-        this.coPrayer = coPrayer;
-    }
-
     public boolean isHasComplain() {
         return hasComplain;
     }
@@ -165,8 +147,6 @@ public class Post implements Serializable, LazyLoading {
         result.put("watchersCount", watchersCount);
         result.put("hasComplain", hasComplain);
         result.put("createdDateText", FormatterUtil.getFirebaseDateFormat().format(new Date(createdDate)));
-        result.put("prayerFor", prayerFor);
-        result.put("coPrayer", coPrayer);
         result.put("isGlobal", isGlobal);
         return result;
     }

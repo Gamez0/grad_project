@@ -7,7 +7,7 @@ public class BoardItem {
     String title;
     String writer;
     String date;
-    String readComment; // 파라미터 규칙에 맞게 변경했습니다. readcomment - > readComment (C를 대문자로)
+    String readComment;
 
     public BoardItem() {
     }
