@@ -10,7 +10,32 @@
 
     <string name="text_1">산산이 부서진 이름이여!\n허공 중에 헤어진 이름이여!\n불러도 주인 없는 이름이여!\n부르다가 내가 죽을 이름이여!\n\n심중에 남아 있는 말 한 마디는\n끝긑내 마저 하지 못하였구나.\n사랑하던 그 사람이여!\n사랑하던 그 사람이여!
     </string>
-    <string name="text_2">하늘에 깔아 논\n바람의 여울터에서나\n속삭이듯 서걱이는\n나무의 그늘에서나, 새는\n노래한다. 그것이 노래인 줄도 모르면서\n새는 그것이 사랑인 줄도 모르면서\n두 놈이 부리를\n서로의 죽지에 파묻고\n따스한 체온(體溫)을 나누어 가진다.\n2\n새는 울어\n뜻을 만들지 않고.\n지어서 교태(嬌態)로\n사랑을 가식(假飾)하지 않는다.\n3\n―― 포수는 한 덩이 납으로\n그 순수(純粹)를 겨냥하지만,\n매양 쏘는 것은\n피에 젖은 한 마리 상(傷)한 새에 지나지 않는다.
+    <string name="text_2">하늘에 깔아 논\n바람의 여울터에서나\n속삭이듯 서걱이는\n나무의 그늘에서나, 새는\n노래한다. 그것이 노래인 줄도 모르면서\n새는 그것이 사랑인 줄도 모르면서\n두 놈이 부리를\n서로의 죽지에 파묻고\n따스한 체온(體溫)을 나누어 가진다.\n2\n새는 울어\n뜻을 만들지 않고.\n지어서 교태(嬌態)로\n사랑을 가식(假飾)하지 않는다.\n...
     </string>
+
+
+    <string name="message_post_was_removed">포스트가 삭제 되었습니다</string>
+
+
+    <string name="loading">Loading …</string>
+    <string name="removing">Removing …</string>
+    <string name="error_general">Somthing went wrong.</string>
+    <string name="error_general_post">Somthing went wrong with post, id: %1$s</string>
+    <string name="internet_connection_failed">No internet connection</string>
+    <string name="press_once_again_to_exit">Press once again to exit</string>
+
+<!--    util 정보-->
+    <string name="now_time_range">now</string>
+    <string name="duration_minutes_shortest">%1$d m</string>
+    <string name="duration_hours_shortest">%1$d h</string>
+    <string name="duration_days_shortest">%1$d d</string>
+    <string name="duration_week_shortest">%1$d w</string>
+
+    <!--Firebase errors-->
+    <string name="permission_denied_error">Please check your rules to access the Firebase Realtime Database</string>
+
+    <!--Notifications-->
+    <string name="new_like_channel_name">New Like</string>
+    <string name="new_comment_channel_name">New Comment</string>
 
 </resources>

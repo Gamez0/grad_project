@@ -1,4 +1,4 @@
-package com.example.grad_project.Activity;
+package com.example.grad_project.main.SplashAnimation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.grad_project.Activity.MainActivity;
 import com.example.grad_project.R;
 
 public class SplashActivity extends AppCompatActivity {
@@ -22,6 +23,6 @@ public class SplashActivity extends AppCompatActivity {
 
                 finish();
             }
-        }, 500);
+        }, 2500);
     }
 }

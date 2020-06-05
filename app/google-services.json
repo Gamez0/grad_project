@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "957274199049-k9sqd2ivc7o9gd9jpkabbks4hf62066o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grad_proj",
+            "certificate_hash": "6e242b60e653f5cbe482fad8e9f679ee8ad2263d"
+          }
+        },
+        {
           "client_id": "957274199049-tp0n71dqnhc7aji7g87g6dhj4dvfu0nu.apps.googleusercontent.com",
           "client_type": 3
         }
